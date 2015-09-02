@@ -5,6 +5,7 @@
 nav, li, .placeholder, footer {
 	background-color: slateblue;
 	color: white;
+	text-transform: uppercase;
 
 }
 
@@ -39,11 +40,11 @@ main {
 	margin-left: 5%;
 }
 
-.placeholder, footer {
+.placeholder {
 	line-height: .35em;
 	padding: 40px;
 	text-align: center;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 }
 
 img {
@@ -65,6 +66,15 @@ img {
 	height: 200px;
 }
 
+footer {
+	background-color: slateblue;
+	color: white;
+	position: fixed;
+	bottom: 0px;
+	width: 450px;
+	text-align: center;
+}
+
 
 @media only screen and (max-width : 720px) {
 	nav li {
@@ -80,13 +90,16 @@ img {
 	.large-pic {
 		display: block;
 		width: 400px;
-		height: 400px;
-		margin: 0 auto;
+		height: 400px;	
 	}
 
 	.gallery img {
 		width: 350px;
 		height: 350px;
+	}
+
+	footer {
+		text-align: left;
 	}
 }
 
